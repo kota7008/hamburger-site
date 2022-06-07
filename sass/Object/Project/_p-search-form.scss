@@ -1,0 +1,39 @@
+@use "./../../Foundation/variable" as *;
+
+.p-search-form {
+  width: 320px;
+  margin: 38px 0;
+  margin-left: 24px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    color: $color-gray;
+    background-image: url(./../../../img/search.png);
+    top: 11px;
+    left: 16px;
+  }
+
+  &__keyword {
+    width: 230px;
+    height: 46px;
+    background: #fff;
+    border: 1px solid $color-gray;
+    border-radius: 10px;
+  }
+
+  &__submit {
+    text-align: right;
+    padding: 12px 23px;
+    background: linear-gradient(to bottom, #F2EDE9, #DED8D3);
+    border-radius: 10px;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-gray;
+    font-family: $font-main;
+  }
+}
