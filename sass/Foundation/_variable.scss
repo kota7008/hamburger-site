@@ -2,7 +2,7 @@
 # メディアクエリ
 =============================================== */
 ///インナーの最大幅を固定するための変数
-$layout-width-inner: 1200px;
+$layout-width-inner: 1025px;
 
 //ブレイクポイント
 $breakpoints: (
@@ -17,3 +17,22 @@ $breakpoints: (
     @content;
   }
 }
+
+/* ===============================================
+# color
+=============================================== */
+// font
+$color-gray: #707070;
+$color-brown: #3C2A10;
+$color-white: #FFFFFF;
+// bg
+$bg-white: #FFFDFA;
+$bg-header: #FFF7EF;
+$bg-footer: #9D8670;
+$bg-menu: #F2EDE9;
+
+/* ===============================================
+# font-family
+=============================================== */
+$font-primary: "Roboto";
+$font-main: "M+ 1m";
