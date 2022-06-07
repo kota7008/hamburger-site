@@ -1,2 +1,7 @@
 @use "./../Foundation/variable" as *;
 
+.l-header {
+  width: 100%;
+  height: 217px;
+  background: $bg-header;
+}
