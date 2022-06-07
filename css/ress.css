@@ -1,4 +1,4 @@
-/* resset.dev • v5.0.2 */
+/* reset.dev • v5.0.2 */
 
 /* # =================================================================
    # Global selectors
@@ -139,7 +139,7 @@ input {
 
 textarea {
   overflow: auto; /* Internet Explorer 11+ */
-  resize: vertical; /* Specify textarea resizability */
+  resize: vertical; /* Specify textarea */
 }
 
 button,
@@ -275,7 +275,7 @@ progress {
   cursor: pointer;
 }
 
-/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+/* Specify the cursor of disabled, not-editable, or otherwise inoperable elements */
 [aria-disabled='true'] {
   cursor: default;
 }
