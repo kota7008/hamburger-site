@@ -1,0 +1,75 @@
+@use "./../../Foundation/variable" as *;
+
+.p-access {
+  width: 100%;
+  height: 691px;
+  padding: 40px 40px 50px 40px;
+  position: relative;
+
+  &__title {
+    font-size: 30px;
+    z-index: 2;
+    font-weight: bold;
+    font-family: $font-main;
+    color: $bg-white;
+    z-index: 2;
+    line-height: 45px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 75px;
+      height: 2px;
+      background: #FFF;      
+      position: absolute;
+      z-index: 2;
+      top: 65px;
+      left: 0;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $font-main;
+    color: $bg-white;
+    z-index: 2;
+    line-height: 33px;
+  }
+  &__map {
+    position: absolute;
+    width: 375px;
+    height: 691px;
+    background: url(./../../../img/access-map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: rgba($color: $color-gray, $alpha: 0.6);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: -1;
+    }
+
+    &-glay {
+      position: absolute;
+      width: 100%;
+      height: 415px;
+      background: rgba($color: #000, $alpha: 0.29);
+      top: 0;
+      left: 0;
+      display: block;
+      z-index: -1;
+    }
+  }
+  
+}

@@ -1,0 +1,11 @@
+@use "./../Foundation/variable" as *;
+
+.l-footer {
+  width: 375px;
+  height: 150px;
+  background: url(./../../img/footer.png);
+  background-repeat: no-repeat;
+  color: $bg-white;
+  font-family: $font-main;
+  padding: 40px 0 30px;
+}
