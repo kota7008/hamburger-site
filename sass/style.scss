@@ -16,7 +16,7 @@
 /* ===============================================
 # Object > Component
 =============================================== */
-
+@use "./Object/Component/c-card";
 /* ===============================================
 # Object > Project
 =============================================== */
@@ -28,3 +28,4 @@
 @use "./Object/Project/p-access";
 @use "./Object/Project/p-footer";
 @use "./Object/Project/p-hamburger";
+@use "./Object/Project/p-archive";

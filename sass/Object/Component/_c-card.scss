@@ -1,0 +1,36 @@
+@use "./../../Foundation/variable" as *;
+
+.c-card {
+  color: $color-white;
+  font-family: $font-main;
+  padding: 31px 0 43px 17px;
+  &__ttl {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.9rem;
+    margin-bottom: 2.4rem;
+  }
+  &__ttl-sub {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    width: 246px;
+    margin-bottom: 40px;
+  }
+  &__button {
+    margin-left: 63px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 163px;
+    height: 43px;
+    padding-top: 10px;
+    border-radius: 50px;
+    background: $bg-white;
+    color: $color-gray;
+  }
+}

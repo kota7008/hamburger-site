@@ -1,0 +1,107 @@
+@use "./../../Foundation/variable" as *;
+
+.p-archive {
+  width: 100%;
+  height: 283px;
+  background: url(./../../../img/archive.jpg);
+  z-index: -2;
+  padding-left: 37px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: rgba($color: #000000, $alpha: 0.5);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__title {
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 48px;
+    z-index: 2;
+    padding-top: 102px;
+    padding-bottom: 7px;
+  }
+
+  &__subtitle {
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 1.6rem;
+    line-height: 23px;
+    z-index: 2;
+  }
+
+  &__text {
+    color: $color-brown;
+    font-family: $font-main;
+
+    &-title {
+      font-size: 2.8rem;
+      line-height: 42px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    &-text {
+      font-size: 1.6rem;
+      line-height: 28px;
+      margin-bottom: 19px;
+    }
+  }
+
+  &__menu {
+    margin-bottom: 20px;
+    background: #3c2b1c;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__page-nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 335px;
+    height: 22px;
+
+    &-left {
+      a {
+        margin-left: 26px;
+        font-family: $font-main;
+        color: $color-gray;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: url(./../../../img/arrow-left.png);
+          top: 2px;
+          left: -26px;
+        }
+      }
+    }
+
+    &-right {
+      a {
+        margin-right: 26px;
+        font-family: $font-main;
+        color: $color-gray;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: url(./../../../img/arrow-right.png);
+          top: 2px;
+          right: -26px;
+        }
+      }
+    }
+  }
+}
