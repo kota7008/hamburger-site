@@ -6,6 +6,10 @@
   padding: 40px 40px 50px 40px;
   position: relative;
 
+  @include mq("tab") {
+    height: 415px;
+  }
+
   &__title {
     font-size: 3rem;
     z-index: 2;
@@ -38,15 +42,19 @@
   }
   &__map {
     position: absolute;
-    width: 375px;
+    width: 100vh;
     height: 691px;
     background: url(./../../../img/access-map.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     top: 0;
     left: 0;
     z-index: -2;
+
+    @include mq("tab") {
+      height: 415px;
+    }
 
     &::before {
       content: "";

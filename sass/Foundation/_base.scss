@@ -20,7 +20,9 @@ body {
 	font-size: 1.6rem;
 	min-width: 350px;
 	width: 100%;
-	overflow-x: hidden;
+	::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 img,

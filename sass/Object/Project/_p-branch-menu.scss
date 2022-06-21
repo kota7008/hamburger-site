@@ -4,10 +4,23 @@
   background: $bg-white;
   padding: 20px 20px 49px 20px;
 
+  @include mq("tab") {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-between;
+  }
+
   &__item {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+
+    @include mq("tab") {
+      gap: 40px;
+      margin: 0 auto;
+    }
 
     &-take-out {
       width: 100%;
@@ -15,6 +28,10 @@
       background: url(./../../../img/take-out.jpg);
       background-position: center;
       background-repeat: no-repeat;
+
+      @include mq("tab") {
+        width: 335px;
+      }
     }
 
     &-eat-in {
@@ -23,9 +40,14 @@
       background: url(./../../../img/eat-in.jpg);
       background-position: center;
       background-repeat: no-repeat;
+
+      @include mq("tab") {
+        width: 335px;
+      }
     }
 
     &-list {
+      width: inherit;
       list-style: none;
       padding: 11px 15px 15px 15px;
 

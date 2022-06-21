@@ -2,8 +2,8 @@
 
 .p-search-form {
   width: 320px;
-  margin: 38px 0;
-  margin-left: 24px;
+  margin: 38px auto;
+  // margin-left: 24px;
   position: relative;
 
   &::before {
@@ -23,6 +23,7 @@
     background: #fff;
     border: 1px solid $color-gray;
     border-radius: 10px;
+    padding-left: 50px;
   }
 
   &__submit {

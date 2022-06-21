@@ -9,17 +9,18 @@
     right: 17px;
     z-index: 1000;
 
-    @include mq("pc") {
-      display: none;
-    }
+    // @include mq("pc") {
+    //   display: none;
+    // }
+  }
+
+  &.mask {
+    opacity: 1;
+    z-index: 998;
   }
 
   &__title {
     display: none; //スマホ・タブレット時サイドバーの名前を消す
-
-    @include mq("pc") {
-      display: block;
-    }
   }
 
   // display: none;
@@ -27,17 +28,11 @@
   z-index: -1;
   opacity: 0;
   top: 0;
-  right: -120%;
+  // right: -120%;
   width: 100%;
   height: 100vh;
   background: rgba($color: #000000, $alpha: 0.5);
   transition: all 0.3s;
-
-  &.slide {
-    right: 0;
-    opacity: 1;
-    z-index: 998;
-  }
 
   // &.is-active,
   &__nav-content {
@@ -85,4 +80,13 @@
     font-weight: bold;
     margin-bottom: 40px;
   }
+}
+
+.p-sidebar.mask {
+  opacity: 1;
+  z-index: 998;
+}
+
+.p-sidebar__nav-content.slide {
+  right: 0;
 }

@@ -1,9 +1,12 @@
-$(".p-hamburger").click(function () {
-	$(this).toggleClass('active');
-    $(".p-sidebar, .p-sidebar__nav-content").toggleClass('slide');
+
+$(".p-hamburger").click(function () {//ボタンがクリックされたら
+  $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+  $(".p-sidebar").toggleClass('mask');
+  $(".p-sidebar__nav-content").toggleClass('slide');//ナビゲーションにpanelactiveクラスを付与
 });
 
-$(".p-sidebar").on('touchstart',function () {
-  $(".p-hamburger").removeClass('active');
-    $(".p-sidebar, .p-sidebar__nav-content").removeClass('slide');
+$(".p-sidebar-close").click(function () {
+  $(".p-hamburger").removeClass('active');//ボタンの activeクラスを除去し
+  $(".p-sidebar").removeClass('mask');//ナビゲーションのpanelactiveクラスも除去
+  $(".p-sidebar__nav-content").removeClass('slide');//ナビゲーションにpanelactiveクラスを付与
 });
