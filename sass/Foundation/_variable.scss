@@ -6,8 +6,8 @@ $layout-width-inner: 1025px;
 
 //ブレイクポイント
 $breakpoints: (
-  "sp": "(max-width: 767px)",
-  "tab": "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
+  "sp": "(max-width: 789px)",
+  "tab": "(min-width: 790px) and (max-width: #{$layout-width-inner - 1px})",
   "pc": "(min-width: #{$layout-width-inner})",
 );
 

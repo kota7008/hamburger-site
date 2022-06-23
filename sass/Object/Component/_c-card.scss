@@ -18,7 +18,8 @@
   &__text {
     font-size: 1.6rem;
     line-height: 2.3rem;
-    width: 246px;
+    min-width: 246px;
+    max-width: 509px;
     margin-bottom: 40px;
   }
   &__button {
