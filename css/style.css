@@ -325,6 +325,7 @@ body {
   font-size: 1.6rem;
   min-width: 350px;
   width: 100%;
+  overflow-x: hidden;
 }
 body ::-webkit-scrollbar {
   display: none;
