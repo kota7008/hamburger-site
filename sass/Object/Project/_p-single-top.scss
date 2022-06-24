@@ -2,18 +2,25 @@
 
 .p-single-top {
   width: 100%;
-  height: 225px;
-  background: url(./../../../img/single-top.jpg);
+  min-height: 225px;
+  background: url(./../../../img/single-top-pc.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq("tab") {
+
+    height: 46%;
+  }
 
   &__title {
     color: $bg-white;
-    font-family: $color-white;
+    font-family: $font-main;
     font-size: 3.6rem;
     font-weight: bold;
     line-height: 54px;
     padding-top: 91px;
-    padding-left: 26px;
+    // padding-left: 26px;
+    padding-left: 7.7%;
   }
 }

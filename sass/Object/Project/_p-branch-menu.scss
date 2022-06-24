@@ -37,7 +37,7 @@
       background-repeat: no-repeat;
 
       @include mq("tab") {
-        width: 335px;
+        width: 40%;
       }
       @include mq("pc") {
         width: 40%;
@@ -52,7 +52,7 @@
       background-repeat: no-repeat;
 
       @include mq("tab") {
-        width: 335px;
+        width: 40%;
       }
       @include mq("pc") {
         width: 40%;

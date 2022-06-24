@@ -1,8 +1,8 @@
 @use "./../../Foundation/variable" as *;
 
 .p-search-form {
-  width: 320px;
   margin: 38px auto;
+  width: 320px;
   // margin-left: 24px;
   position: relative;
 
@@ -23,7 +23,7 @@
     background: #fff;
     border: 1px solid $color-gray;
     border-radius: 10px;
-    padding-left: 50px;
+    padding-left: px;
   }
 
   &__submit {

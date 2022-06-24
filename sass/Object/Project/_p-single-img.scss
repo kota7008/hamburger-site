@@ -23,13 +23,19 @@
       }
 
       &__img {
+        width: 40%;
         img {
-          width: 144px;
-          height: 89px;
+          width: 100%;
+          height: auto;
+
+          @include mq("tab") {
+            // height: 189px;
+          }
         }
       }
       &__text {
-        width: 183px;
+        // width: 183px;
+        width: 50%;
         height: 176px;
         overflow: scroll;
         font-size: 1.6rem;
@@ -42,12 +48,17 @@
   &__secondary {
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 267px;
-    height: 166px;
-
+    // width: 267px;
+    width: 90%;
+    // height: 166px;
+    height: auto;
+    
     img {
-      width: 267px;
-      height: 166px;
+      text-align: center;
+      // width: 267px;
+      // height: 166px;
+      width: 80%;
+      height: auto;
     }
   }
 

@@ -60,50 +60,13 @@
     line-height: 33px;
     position: relative;
   }
-  // &__map {
-  //   position: absolute;
-  //   width: 100%;
-  //   min-height: 691px;
-  //   object-fit: cover;
-  //   background: url(./../../../img/access-map.jpg);
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: -2;
-
-  //   @include mq("tab") {
-  //     min-height: 415px;
-  //   }
-
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     background: rgba($color: $color-gray, $alpha: 0.6);
-  //     background-size: contain;
-  //     top: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 100vh;
-  //     display: block;
-  //     z-index: -1;
-
-  //     @include mq("tab") {
-  //       min-height: 415px;
-  //     }
-  //   }
-
+  
   &__map-glay {
     position: absolute;
     width: 100%;
     height: 415px;
     background: rgba($color: #000, $alpha: 0.29);
     top: 0;
-    left: 0;
-    display: block;
-    // z-index: -1;
-    // z-index: 1;
+    left: 0; 
   }
-  // }
 }
