@@ -412,7 +412,7 @@ a:hover img {
 .c-card__text {
   font-size: 1.6rem;
   line-height: 2.3rem;
-  width: 70%;
+  width: 100%;
   margin-bottom: 40px;
 }
 .c-card__button {
@@ -598,7 +598,7 @@ a:hover img {
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 .p-branch-menu__item {
@@ -609,8 +609,13 @@ a:hover img {
 }
 @media (min-width: 790px) and (max-width: 1024px) {
   .p-branch-menu__item {
-    gap: 40px;
+    gap: 4.7%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .p-branch-menu__item {
+    gap: 7%;
   }
 }
 .p-branch-menu__item-take-out {
@@ -622,12 +627,12 @@ a:hover img {
 }
 @media (min-width: 790px) and (max-width: 1024px) {
   .p-branch-menu__item-take-out {
-    width: 40%;
+    width: 45%;
   }
 }
 @media (min-width: 1025px) {
   .p-branch-menu__item-take-out {
-    width: 40%;
+    width: 46%;
   }
 }
 .p-branch-menu__item-eat-in {
@@ -639,12 +644,12 @@ a:hover img {
 }
 @media (min-width: 790px) and (max-width: 1024px) {
   .p-branch-menu__item-eat-in {
-    width: 40%;
+    width: 45%;
   }
 }
 @media (min-width: 1025px) {
   .p-branch-menu__item-eat-in {
-    width: 40%;
+    width: 46%;
   }
 }
 .p-branch-menu__item-list {
@@ -789,6 +794,7 @@ a:hover img {
   z-index: -2;
   padding-left: 37px;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 .p-archive::after {

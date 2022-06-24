@@ -15,7 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__item {
@@ -25,8 +25,13 @@
     justify-content: center;
 
     @include mq("tab") {
-      gap: 40px;
+      gap: 4.7%;
       margin: 0 auto;
+    }
+
+    @include mq("pc") {
+      gap: 7%;
+      // margin: 0 auto;
     }
 
     &-take-out {
@@ -37,10 +42,10 @@
       background-repeat: no-repeat;
 
       @include mq("tab") {
-        width: 40%;
+        width: 45%;
       }
       @include mq("pc") {
-        width: 40%;
+        width: 46%;
       }
     }
 
@@ -52,10 +57,10 @@
       background-repeat: no-repeat;
 
       @include mq("tab") {
-        width: 40%;
+        width: 45%;
       }
       @include mq("pc") {
-        width: 40%;
+        width: 46%;
       }
     }
 
