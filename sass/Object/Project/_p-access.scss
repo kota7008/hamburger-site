@@ -24,9 +24,6 @@
     @include mq("tab") {
       min-height: 415px;
     }
-    @include mq("pc") {
-      // width: 80%;
-    }
   }
   @include mq("tab") {
     min-height: 415px;
@@ -42,6 +39,10 @@
     line-height: 45px;
     margin-bottom: 40px;
     position: relative;
+
+    @include mq("pc") {
+      margin-bottom: 55px;
+    }
 
     &::after {
       content: "";
@@ -62,6 +63,12 @@
     z-index: 20;
     line-height: 33px;
     position: relative;
+
+    @include mq("pc") {
+      width: 45%;
+      min-height: 356px;
+      font-size: 1.6rem;
+    }
   }
   
   &__map-glay {
@@ -71,5 +78,10 @@
     background: rgba($color: #000, $alpha: 0.29);
     top: 0;
     left: 0; 
+
+    @include mq("pc") {
+      min-height: 600px;
+      width: 60%;
+    }
   }
 }

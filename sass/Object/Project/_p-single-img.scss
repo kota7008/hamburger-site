@@ -18,6 +18,13 @@
       background-repeat: no-repeat;
       margin-bottom: 60px;
     }
+    @include mq("pc") {
+      height: 500px;
+      background: url(./../../../img/foods-primary-pc.jpg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 60px;
+    }
   }
   &__desc {
     &-item {
@@ -30,6 +37,10 @@
       @include mq("tab") {
         height: auto;
         margin-bottom: 100px;
+      }
+      @include mq("pc") {
+        height: auto;
+        margin-bottom: 60px;
       }
 
       &:last-child {
@@ -64,6 +75,9 @@
           height: auto;
           overflow: auto;
         }
+        @include mq("pc") {
+          width: 55%;
+        }
       }
     }
   }
@@ -77,6 +91,10 @@
       width: 100%;
       margin-bottom: 240px;
     }
+    @include mq("pc") {
+      width: 60%;
+      margin-bottom: 60px;
+    }
 
     img {
       text-align: center;
@@ -89,6 +107,9 @@
         margin: 0 auto;
         width: 80%;
       }
+      @include mq("pc") {
+        margin: 0 auto;
+      }
     }
   }
 
@@ -99,6 +120,12 @@
       // gap: 16px;
       flex-wrap: wrap;
     }
+    @include mq("pc") {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -107,12 +134,18 @@
       @include mq("tab") {
         width: 48%;
       }
+      @include mq("pc") {
+        width: 32%;
+      }
 
       &:last-child {
         margin-bottom: 30px;
 
         @include mq("tab") {
           margin-bottom: 60px;
+        }
+        @include mq("pc") {
+          margin-bottom: 20px;
         }
       }
     }

@@ -11,6 +11,11 @@
   @include mq("tab") {
     height: 500px;
   }
+  @include mq("pc") {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+  }
 
   &__title {
     color: $color-white;
@@ -24,6 +29,11 @@
     @include mq("tab") {
       font-size: 6rem;
       padding-top: 209px;
+    }
+    @include mq("pc") {
+      font-size: 6rem;
+      padding: 0;
+      padding-left: 7.7%;
     }
   }
 }
