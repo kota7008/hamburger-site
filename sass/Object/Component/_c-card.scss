@@ -4,6 +4,11 @@
   color: $color-white;
   font-family: $font-main;
   padding: 31px 0 43px 17px;
+
+  @include mq("tab") {
+    padding: 30px 59px 40px 34px;
+  }
+
   &__ttl {
     font-size: 2rem;
     font-weight: bold;
@@ -21,6 +26,10 @@
     // min-width: 246px;
     width: 100%;
     margin-bottom: 40px;
+
+    @include mq("tab") {
+      margin-bottom: 45px;
+    }
   }
   &__button {
     margin-left: 63px;
@@ -33,5 +42,6 @@
     border-radius: 50px;
     background: $bg-white;
     color: $color-gray;
+    
   }
 }

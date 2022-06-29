@@ -6,6 +6,15 @@
   // margin-left: 24px;
   position: relative;
 
+  @include mq("tab") {
+    width: 546px;
+  }
+  @include mq("pc") {
+    width: 546px;
+    margin: 0;
+    margin-right: 30px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -23,7 +32,13 @@
     background: #fff;
     border: 1px solid $color-gray;
     border-radius: 10px;
-    padding-left: px;
+
+    @include mq("tab") {
+      width: 396px;
+    }
+    @include mq("pc") {
+      width: 396px;
+    }
   }
 
   &__submit {
@@ -37,5 +52,14 @@
     color: $color-gray;
     font-family: $font-main;
     border: 1px solid $color-gray;
+
+    @include mq("tab") {
+      text-align: center;
+      width: 136px;
+    }
+    @include mq("pc") {
+      text-align: center;
+      width: 136px;
+    }
   }
 }

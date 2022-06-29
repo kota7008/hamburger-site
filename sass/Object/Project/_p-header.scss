@@ -10,6 +10,14 @@
     text-align: center;
     padding-top: 40px;
     font-weight: bold;
+    
+    @include mq("pc") {
+      line-height: 84px;
+      font-size: 5rem;
+      text-align: left;
+      padding-top: 0;
+      margin-left: 65px;
+    }
   }
 
   &__nav {
@@ -18,5 +26,9 @@
     position: absolute;
     top: 14px;
     right: 16px;
+
+    @include mq("pc") {
+      display: none;
+    }
   }
 }

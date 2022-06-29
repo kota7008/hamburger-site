@@ -1,5 +1,10 @@
 @use "./../../Foundation/variable" as *;
 .p-single-main {
+
+  @include mq("tab") {
+    padding: 30px 40px;
+  }
+
   &__title {
     font-family: $font-main;
     color: $color-brown;
@@ -7,6 +12,12 @@
     font-weight: bold;
     line-height: 42px;
     margin-bottom: 30px;
+
+    @include mq("tab") {
+      font-size: 3.6rem;
+      line-height: 54px;
+      margin-bottom: 60px;
+    }
   }
   &__text {
     font-family: $font-main;
@@ -14,6 +25,10 @@
     font-size: 1.6rem;
     line-height: 23px;
     margin-bottom: 34px;
+
+    @include mq("tab") {
+      margin-bottom: 60px;
+    }
   }
   h3,
   h4,
@@ -26,6 +41,11 @@
   h3 {
     font-size: 2.4rem;
     line-height: 36px;
+
+    @include mq("tab") {
+      font-size: 2.8rem;
+      line-height: 42px;
+    }
   }
   h4,
   h5,
@@ -33,6 +53,10 @@
     font-size: 2rem;
     line-height: 29px;
     margin-top: 30px;
+
+    @include mq("tab") {
+      margin-top: 60px;
+    }
   }
   blockquote {
     color: $color-brown;
@@ -44,8 +68,17 @@
     line-height: 23px;
     font-family: $font-main;
 
+    @include mq("tab") {
+      margin: 60px 0 30px;
+      padding: 50px;
+    }
+
     .textarea {
       margin-bottom: 30px;
+
+      @include mq("tab") {
+        margin-bottom: 60px;
+      }
     }
     .link {
       a {

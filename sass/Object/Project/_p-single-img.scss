@@ -1,6 +1,7 @@
 @use "./../../Foundation/variable" as *;
 
 .p-single-img {
+  padding: 0 40px;
   height: auto;
   &__primary {
     width: 100%;
@@ -9,6 +10,14 @@
     background-position: bottom;
     background-repeat: no-repeat;
     margin-bottom: 30px;
+
+    @include mq("tab") {
+      height: 264px;
+      background: url(./../../../img/foods-primary-tab.jpg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 60px;
+    }
   }
   &__desc {
     &-item {
@@ -18,19 +27,26 @@
       display: flex;
       justify-content: space-between;
 
+      @include mq("tab") {
+        height: auto;
+        margin-bottom: 100px;
+      }
+
       &:last-child {
         flex-direction: row-reverse;
+        @include mq("tab") {
+          margin-bottom: 60px;
+        }
       }
 
       &__img {
         width: 40%;
+        @include mq("tab") {
+          width: 42%;
+        }
         img {
           width: 100%;
           height: auto;
-
-          @include mq("tab") {
-            // height: 189px;
-          }
         }
       }
       &__text {
@@ -42,34 +58,62 @@
         font-family: $font-main;
         color: $color-brown;
         line-height: 23px;
+
+        @include mq("tab") {
+          width: 56%;
+          height: auto;
+          overflow: auto;
+        }
       }
     }
   }
   &__secondary {
     margin: 0 auto;
     margin-bottom: 30px;
-    // width: 267px;
     width: 90%;
-    // height: 166px;
     height: auto;
-    
+
+    @include mq("tab") {
+      width: 100%;
+      margin-bottom: 240px;
+    }
+
     img {
       text-align: center;
       // width: 267px;
       // height: 166px;
       width: 80%;
       height: auto;
+
+      @include mq("tab") {
+        margin: 0 auto;
+        width: 80%;
+      }
     }
   }
 
   &__list {
+    @include mq("tab") {
+      display: flex;
+      justify-content: space-between;
+      // gap: 16px;
+      flex-wrap: wrap;
+    }
     img {
       width: 100%;
       height: auto;
       margin-bottom: 20px;
 
+      @include mq("tab") {
+        width: 48%;
+      }
+
       &:last-child {
         margin-bottom: 30px;
+
+        @include mq("tab") {
+          margin-bottom: 60px;
+        }
       }
     }
   }

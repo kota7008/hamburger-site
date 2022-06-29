@@ -9,8 +9,7 @@
   background-size: cover;
 
   @include mq("tab") {
-
-    height: 46%;
+    height: 500px;
   }
 
   &__title {
@@ -22,5 +21,10 @@
     padding-top: 91px;
     // padding-left: 26px;
     padding-left: 7.7%;
+
+    @include mq("tab") {
+      font-size: 6rem;
+      padding-top: 209px;
+    }
   }
 }

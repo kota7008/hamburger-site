@@ -8,7 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; 
 
   &::before {
     content: "";
@@ -23,6 +23,9 @@
 
     @include mq("tab") {
       min-height: 415px;
+    }
+    @include mq("pc") {
+      // width: 80%;
     }
   }
   @include mq("tab") {
