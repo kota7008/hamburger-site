@@ -1110,12 +1110,16 @@ a:hover img {
   .p-archive__menu img {
     width: 50%;
     height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1025px) {
   .p-archive__menu img {
     width: 50%;
     height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .p-archive__page-nav {

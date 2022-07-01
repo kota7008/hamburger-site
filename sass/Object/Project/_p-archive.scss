@@ -129,10 +129,12 @@
       @include mq("tab") {
         width: 50%;
         height: auto;
+        object-fit: cover;
       }
       @include mq("pc") {
         width: 50%;
         height: auto;
+        object-fit: cover;
       }
     }
   }
