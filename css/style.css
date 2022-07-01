@@ -421,7 +421,8 @@ a:hover img {
 }
 @media (min-width: 1025px) {
   .c-card {
-    padding: 53px 63px 40px;
+    padding: 5%;
+    width: 50%;
   }
 }
 .c-card__ttl {
@@ -432,7 +433,7 @@ a:hover img {
 }
 @media (min-width: 1025px) {
   .c-card__ttl {
-    font-size: 3.6rem;
+    font-size: 3rem;
     line-height: 5.4rem;
     margin-bottom: 4.7rem;
   }
@@ -444,7 +445,7 @@ a:hover img {
 }
 @media (min-width: 1025px) {
   .c-card__ttl-sub {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 3.6rem;
     margin-bottom: 1.5rem;
   }
@@ -552,6 +553,7 @@ a:hover img {
   background: #fff;
   border: 1px solid #707070;
   border-radius: 10px;
+  padding-left: 40px;
 }
 @media (min-width: 790px) and (max-width: 1024px) {
   .p-search-form__keyword {
@@ -606,6 +608,7 @@ a:hover img {
     width: 20%;
     height: auto;
     background: #F2EDE9;
+    transition: none;
   }
 }
 .p-sidebar img {
@@ -808,6 +811,9 @@ a:hover img {
 .p-branch-menu__item-list {
   list-style: none;
   padding: 11px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .p-branch-menu__item-list h2 {
   font-size: 4.1rem;
@@ -850,7 +856,6 @@ a:hover img {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 300px;
 }
 
 .p-access {
@@ -881,6 +886,11 @@ a:hover img {
 @media (min-width: 790px) and (max-width: 1024px) {
   .p-access {
     min-height: 415px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-access {
+    padding: 80px 100px 40px;
   }
 }
 .p-access__title {
@@ -934,7 +944,7 @@ a:hover img {
 }
 @media (min-width: 1025px) {
   .p-access__map-glay {
-    min-height: 600px;
+    height: 100%;
     width: 60%;
   }
 }
@@ -1087,8 +1097,9 @@ a:hover img {
 @media (min-width: 1025px) {
   .p-archive__menu {
     display: flex;
-    margin: 0 80px;
+    margin: 0 5%;
     margin-bottom: 30px;
+    max-height: 24%;
   }
 }
 .p-archive__menu img {
@@ -1098,11 +1109,13 @@ a:hover img {
 @media (min-width: 790px) and (max-width: 1024px) {
   .p-archive__menu img {
     width: 50%;
+    height: auto;
   }
 }
 @media (min-width: 1025px) {
   .p-archive__menu img {
     width: 50%;
+    height: auto;
   }
 }
 .p-archive__page-nav {

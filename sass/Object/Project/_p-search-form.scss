@@ -32,6 +32,7 @@
     background: #fff;
     border: 1px solid $color-gray;
     border-radius: 10px;
+    padding-left: 40px;
 
     @include mq("tab") {
       width: 396px;

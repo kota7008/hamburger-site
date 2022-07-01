@@ -28,6 +28,9 @@
   @include mq("tab") {
     min-height: 415px;
   }
+  @include mq("pc") {
+    padding: 80px 100px 40px;
+  }
 
   &__title {
     font-size: 3rem;
@@ -80,7 +83,7 @@
     left: 0; 
 
     @include mq("pc") {
-      min-height: 600px;
+      height: 100%;
       width: 60%;
     }
   }

@@ -65,9 +65,11 @@
     }
 
     &-list {
-      // width: inherit;
       list-style: none;
       padding: 11px 15px 15px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       h2 {
         font-size: 4.1rem;
@@ -117,7 +119,9 @@
       flex-direction: column;
       flex-wrap: wrap;
       gap: 15px;
-      margin-top: 300px;
+      // margin-top: 300px;
+      // position: absolute;
+
     }
   }
 }
