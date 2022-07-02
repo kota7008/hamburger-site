@@ -604,7 +604,6 @@ a:hover img {
   .p-sidebar {
     position: static;
     opacity: 1;
-    z-index: 1;
     width: 20%;
     height: auto;
     background: #F2EDE9;
@@ -636,6 +635,16 @@ a:hover img {
 .p-sidebar__title {
   display: none;
 }
+@media (min-width: 1025px) {
+  .p-sidebar__title {
+    display: block;
+    padding-left: 46px;
+    padding-top: 80px;
+    font-family: "Roboto";
+    color: #707070;
+    font-size: 34px;
+  }
+}
 .p-sidebar__nav-content {
   position: fixed;
   top: 0;
@@ -661,6 +670,7 @@ a:hover img {
     width: 100%;
     overflow: visible;
     height: auto;
+    padding-top: 85px;
   }
 }
 .p-sidebar__nav-content.slide {
