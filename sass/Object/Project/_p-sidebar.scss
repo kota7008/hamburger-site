@@ -38,6 +38,10 @@
   &.mask {
     opacity: 1;
     z-index: 998;
+
+    @include mq("pc") {
+      display: none;
+    }
   }
 
   &__title {
@@ -80,6 +84,9 @@
 
     &.slide {
       right: 0;
+      @include mq("pc") {
+        display: none;
+      }
     }
 
     ul {
@@ -108,11 +115,11 @@
   }
 }
 
-.p-sidebar.mask {
-  opacity: 1;
-  z-index: 998;
-}
+// .p-sidebar.mask {
+//   opacity: 1;
+//   z-index: 998;
+// }
 
-.p-sidebar__nav-content.slide {
-  right: 0;
-}
+// .p-sidebar__nav-content.slide {
+//   right: 0;
+// }
