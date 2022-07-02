@@ -668,9 +668,9 @@ a:hover img {
   .p-sidebar__nav-content {
     position: static;
     width: 100%;
-    overflow: visible;
     height: auto;
     padding-top: 85px;
+    transition: none;
   }
 }
 .p-sidebar__nav-content.slide {

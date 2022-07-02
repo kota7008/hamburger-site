@@ -73,9 +73,9 @@
     @include mq("pc") {
       position: static;
       width: 100%;
-      overflow: visible;
       height: auto;
       padding-top: 85px;
+      transition: none;
     }
 
     &.slide {
