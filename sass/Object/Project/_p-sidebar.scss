@@ -40,7 +40,7 @@
     z-index: 998;
 
     @include mq("pc") {
-      display: none;
+      display: block;
     }
   }
 
@@ -85,7 +85,7 @@
     &.slide {
       right: 0;
       @include mq("pc") {
-        display: none;
+        display: block;
       }
     }
 
