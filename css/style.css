@@ -613,7 +613,7 @@ a:hover img {
   top: 0;
   right: -120%;
   z-index: 999;
-  width: 87vw;
+  width: 80%;
   height: 100vh;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -624,7 +624,7 @@ a:hover img {
 }
 @media (min-width: 790px) and (max-width: 1024px) {
   .p-sidebar__nav-content {
-    width: 44vw;
+    width: 44%;
   }
 }
 @media (min-width: 1025px) {

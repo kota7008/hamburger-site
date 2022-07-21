@@ -62,7 +62,7 @@
     top: 0;
     right: -120%;
     z-index: 999;
-    width: 87vw;
+    width: 80%;
     height: 100vh;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -72,7 +72,7 @@
     padding-top: 212px;
 
     @include mq("tab") {
-      width: 44vw;
+      width: 44%;
     }
     @include mq("pc") {
       position: static;

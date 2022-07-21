@@ -10,9 +10,13 @@ $(".p-sidebar-close").click(function () {
   $(".p-sidebar__nav-content").removeClass('slide');//ナビゲーションにpanelactiveクラスを付与
 });
 
-  $(function () {
-    if (window.matchMedia('(min-width: 1025px)').matches) {
-      var mask = document.getElementsByClassName('mask');
-      mask.removeAttribute('class');
-    }
-  })
+// pc時のメニューの制御
+$(window).resize(function () {
+  var pc = $(window).width();
+  var tab = 1024;
+  if (pc > tab) {
+    $(".p-hamburger").removeClass('active');//ボタンの activeクラスを除去し
+    $(".p-sidebar").removeClass('mask');//ナビゲーションのpanelactiveクラスも除去
+    $(".p-sidebar__nav-content").removeClass('slide');//ナビゲーションにpanelactiveクラスを除去
+  }
+});
